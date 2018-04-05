@@ -12,33 +12,45 @@
     <title>TechHub</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/fa-svg-with-js.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg text-uppercase bg-light px-lg-0 pb-0 pt-3" style="display:block;">
+    <nav id="navbarResponsive" 	class="navbar navbar-expand-lg text-uppercase bg-light px-lg-0 pb-0 pt-3" style="display:block;">
       <div class="container" style="display:inherit;">
-		<div class="row align-items-center">
+		<div class="row align-items-center justify-content-between">
 			<div class="col">
 				<a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="w-100" src="img/logo.png"></a>
 			</div>
-			<div class="col-6">
-				<form id="custom-search-form" class="form-search form-horizontal pull-right">
-					<div class="input-group">
-					  <input type="text" class="form-control" placeholder="Search for...">
-					  <span class="input-group-btn">
-						<button class="btn btn-secondary" type="button">Go!</button>
-					  </span>
+			<div class="col">
+				 <form action="search-results" method="GET" class="form-inline ml-auto">
+					<div class="input-group input-group-lg">
+						<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+						<button class="btn btn-orange btn-md my-0 ml-sm-2" type="submit"><i class="fa fa-search"></i></button>
 					</div>
 				</form>
 			</div>
-			<div class="col">
-				<i class="fa fa-shopping-cart"></i>
-				<i class="fa fa-user"></i>
+			<div class="col-auto text-right">
+				<div class="text-center">
+					<i class="fa fa-2x text-warning fa-shopping-cart"></i>
+					<h6>5(180.93€)</h6>
+				</div>
 			</div>
-			<div class="col">
+			<div class="col-auto text-right">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://www.newspepper.gr/wp-content/uploads/2017/06/avatar-sequels-delayed-696x464.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid img-thumbnail" style="height:70px; width: 70px; object-fit: cover;"></a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+			</ul>
 				<button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				  Menu
 				  <i class="fa fa-bars"></i>
@@ -115,22 +127,22 @@
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<a href="article.html"><img class="w-100" src="https://www.rogers.com/cms/rogers/page-specific/wireless/samsung/galaxy-s9/images/hero-img-D-EN.png"></a>
+							<a href="article.html"><img class="w-100" src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe"></a>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<h3><a href="article.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+							<h3><a class="text-primary" href="article.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<h4><a class="btn btn-link btn-lg" href="article.html">€994,59 <i class="fa fa-shopping-cart"></i></a></h4>
+							<a href="article.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col text-left">
-							<a href="article.html#reviews">
+					<div class="row mx-2">
+						<div class="col-8 text-left h5">
+							<a class="text-warning" href="article.html#reviews">
 								<i class="fa fa-star"></i>
 								<i class="fa fa-star"></i>
 								<i class="fa fa-star"></i>
@@ -138,8 +150,78 @@
 								<i class="fa fa-star"></i>
 							</a>
 						</div>
-						<div class="col text-right">
-							<a href="#favorite">
+						<div class="col-4 text-right h5">
+							<a class="text-danger" href="#favorite">
+								<i class="fa fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<a href="article.html"><img class="w-100" src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe"></a>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<h3><a class="text-primary" href="article.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<a href="article.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col-8 text-left h5">
+							<a class="text-warning" href="article.html#reviews">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</a>
+						</div>
+						<div class="col-4 text-right h5">
+							<a class="text-danger" href="#favorite">
+								<i class="fa fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<a href="article.html"><img class="w-100" src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe"></a>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<h3><a class="text-primary" href="article.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<a href="article.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col-8 text-left h5">
+							<a class="text-warning" href="article.html#reviews">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</a>
+						</div>
+						<div class="col-4 text-right h5">
+							<a class="text-danger" href="#favorite">
 								<i class="fa fa-heart"></i>
 							</a>
 						</div>
@@ -157,32 +239,136 @@
         <div class="row my-4">
 			<h2>Enthusiast products</h2>
 		</div>
-        <div class="row no-gutters">
-			<div class="col-6">
-				<img class="h-100 w-100" src="https://d1urewwzb2qwii.cloudfront.net/sys-master/root/hc9/h06/8898920284190/New-Razer-Blade-Gamers-Laptop.jpg">
+        <div class="row no-gutters h-400 z-depth-5 mb-5">
+			<div class="col-6 view overlay">
+			<a href="product.html">
+				<img class="img-fluid img-cover full-height" src="https://d1urewwzb2qwii.cloudfront.net/sys-master/root/hc9/h06/8898920284190/New-Razer-Blade-Gamers-Laptop.jpg">
+				<div class="mask flex-center rgba-black-strong">
+					<p class="white-text lead">Razer Blade</p>
+				</div>
+				</a>
+				
 			</div>			
 			<div class="col-6">
-				<div class="row no-gutters">
-					<img class="h-100 w-100" src="https://cnet4.cbsistatic.com/img/I-2dhG3a_A2B-LPW1vtnnnynxjk=/830x467/2017/10/16/53715bdb-d189-4aae-8e8b-f48cbe5d9512/google-pixel-2-0304-013.jpg">
+				<div class="row h-200 no-gutters view overlay">
+			<a href="product.html">
+				<img class="img-fluid img-cover" src="https://cnet4.cbsistatic.com/img/I-2dhG3a_A2B-LPW1vtnnnynxjk=/830x467/2017/10/16/53715bdb-d189-4aae-8e8b-f48cbe5d9512/google-pixel-2-0304-013.jpg">
+				<div class="mask flex-center rgba-black-strong">
+					<p class="white-text lead">Google Pixel 2</p>
 				</div>
-				<div class="row no-gutters">
-					<img class="h-100 w-100" src="https://c.s-microsoft.com/en-us/CMSImages/SurfaceHome_Book2_1_ContentPlacement3_V1_US_P.png.jpg?version=44a56fb3-7ef3-dd03-626f-f83620e314a1">
+				</a>
+				</div>
+				<div class="row h-200 no-gutters view overlay">
+			<a href="product.html">
+				<img class="img-fluid img-cover" src="https://c.s-microsoft.com/en-us/CMSImages/SurfaceHome_Book2_1_ContentPlacement3_V1_US_P.png.jpg?version=44a56fb3-7ef3-dd03-626f-f83620e314a1">
+				<div class="mask flex-center rgba-black-strong">
+					<p class="white-text lead">Microsoft Surface Home</p>
+				</div>
+				</a>
 				</div>
 			</div>
 		</div>
 	  </div>
 	</section>
 	
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-			
-        </div>
-      </div>
-    </footer>
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><img class="w-100" src="img/logo-light.png"></h6>
+                      <p>For enthusiasts by enthusiasts. Compare top-notch products and buy at really low prices.</p>
+                  </div>
+                  <!--/.First column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Second column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Categories</h6>
+                      <p><a href="#!">Computers</a></p>
+                      <p><a href="#!">Tablets</a></p>
+                      <p><a href="#!">Smartphones</a></p>
+                      <p><a href="#!">Consoles</a></p>
+                      <p><a href="#!">Cameras</a></p>
+                  </div>
+                  <!--/.Second column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Third column-->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                      <p><a href="#!">Your Account</a></p>
+                      <p><a href="#!">Become an Affiliate</a></p>
+                      <p><a href="#!">Shipping Rates</a></p>
+                      <p><a href="#!">Help</a></p>
+                  </div>
+                  <!--/.Third column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Fourth column-->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> Heraklion, GR 71202, GR</p>
+                      <p><i class="fa fa-envelope mr-3"></i> info@techhub.com</p>
+                      <p><i class="fa fa-phone mr-3"></i> + 30 281 067 8328</p>
+                      <p><i class="fa fa-print mr-3"></i> + 30 281 067 8329</p>
+                  </div>
+                  <!--/.Fourth column-->
+      
+              </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center justify-content-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 col-lg-4">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="#!"><strong> TechHub.com</strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div>
+                  <!--Grid column-->
+				  <div class="col-md-4 col-lg-4 ml-lg-0">
+					<img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+				  </div>
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 col-lg-4 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script defer src="js/fontawesome-all.min.js"></script>
   </body>
 

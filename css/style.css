@@ -1,0 +1,23 @@
+body{
+	font-family: 'Questrial', sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+.img-cover{
+	object-fit: cover;
+}
+
+.navbar-brand{
+	max-width: 200px;
+}
+
+.h-200{
+	height:200px;
+}
+
+.h-400{
+	height:400px;
+}
