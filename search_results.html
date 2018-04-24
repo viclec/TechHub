@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>TechHub</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/fa-svg-with-js.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav id="navbarResponsive" class="navbar navbar-expand-lg text-uppercase bg-light px-lg-0 pb-0 pt-3" style="display:block;">
+    <div class="container" style="display:inherit;">
+      <div class="row align-items-center justify-content-between">
+        <div class="col">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="w-100" src="img/logo.png"></a>
+        </div>
+        <div class="col">
+          <form action="search-results" method="GET" class="form-inline ml-auto">
+            <div class="input-group input-group-lg" style="width:600px">
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="width:500px;">
+              <button class="btn btn-orange btn-md my-0 ml-sm-2" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-auto text-right">
+          <div class="text-center">
+            <i class="fa fa-2x text-warning fa-shopping-cart"></i>
+            <h6>5(180.93€)</h6>
+          </div>
+        </div>
+        <div class="col-auto text-right">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://www.newspepper.gr/wp-content/uploads/2017/06/avatar-sequels-delayed-696x464.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid img-thumbnail" style="height:70px; width: 70px; object-fit: cover;"></a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				  Menu
+				  <i class="fa fa-bars"></i>
+				</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark navbar-dark mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-white">
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3" href="computers.html">Computers</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3" href="tablets.html">Tablets</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3" href="smartphones.html">Smartphones</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3" href="consoles.html">Consoles</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3" href="cameras.html">Cameras</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-3 bg-secondary">
+          <div class="filter-container m-2">
+            <h2 class="h2">Manufacturer</h2>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Xiaomi (15)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Apple (8)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Samsung (4)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Huawei (5)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck5">
+                  <label class="custom-control-label" for="customCheck5">Alcatel (12)</label>
+                </div>
+              </li>
+            </ul>
+            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Nokia (15)</a>
+              <a class="dropdown-item" href="#">MLS (10)</a>
+            </div>
+          </div>
+          <div class="filter-container m-2">
+            <h2 class="h2">CPU</h2>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck6">
+                  <label class="custom-control-label" for="customCheck6">Single Core (22)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck7">
+                  <label class="custom-control-label" for="customCheck7">Dual Core (14)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck8">
+                  <label class="custom-control-label" for="customCheck8">Quad Core (10)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck9">
+                  <label class="custom-control-label" for="customCheck9">Octa Core (6)2)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck10">
+                  <label class="custom-control-label" for="customCheck10">Deca Core (4)</label>
+                </div>
+              </li>
+            </ul>
+            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Nokia (15)</a>
+              <a class="dropdown-item" href="#">MLS (10)</a>
+            </div>
+          </div>
+          <div class="filter-container m-2">
+            <h2 class="h2">Memory</h2>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck11">
+                  <label class="custom-control-label" for="customCheck11">1GB (18)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck12">
+                  <label class="custom-control-label" for="customCheck12">2GB (23)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck13">
+                  <label class="custom-control-label" for="customCheck13">3GB (18)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck14">
+                  <label class="custom-control-label" for="customCheck14">4GB (12)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck15">
+                  <label class="custom-control-label" for="customCheck15">6GB (4)</label>
+                </div>
+              </li>
+            </ul>
+            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Nokia (15)</a>
+              <a class="dropdown-item" href="#">MLS (10)</a>
+            </div>
+          </div>
+          <div class="filter-container m-2">
+            <h2 class="h2">Screen Size</h2>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck16">
+                  <label class="custom-control-label" for="customCheck16">Under 3.5" (6)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck17">
+                  <label class="custom-control-label" for="customCheck17">3.5" to 4.5" (22)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck18">
+                  <label class="custom-control-label" for="customCheck18">4.5" to 5.5" (18)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck19">
+                  <label class="custom-control-label" for="customCheck19">Over 5.5" (16)</label>
+                </div>
+              </li>
+            </ul>
+            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Nokia (15)</a>
+              <a class="dropdown-item" href="#">MLS (10)</a>
+            </div>
+          </div>
+          <div class="filter-container m-2">
+            <h2 class="h2">Price</h2>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck19">
+                  <label class="custom-control-label" for="customCheck19">Under 100€ (9)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck19">
+                  <label class="custom-control-label" for="customCheck19">100€-200€ (12)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck19">
+                  <label class="custom-control-label" for="customCheck19">200€-300€ (32)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck19">
+                  <label class="custom-control-label" for="customCheck19">Over 400€ (12)</label>
+                </div>
+              </li>
+            </ul>
+            <span class="text-warning">Add a slider here</span>
+          </div>
+        </div>
+        <div class="col-9 p-4">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col text-left">
+                <h1>Search results</h1>
+              </div>
+              <div class="col">
+                <ul class="pagination pg-blue m-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link active" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                  </li>
+                  <span class="mt-1"> (154) </span>
+                </ul>
+              </div>
+              <div class="col text-right">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" style="display:none" name="options" id="option1" autocomplete="off" checked>
+                    <i class="fa fa-th"></i>
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" style="display:none" name="options" id="option2" autocomplete="off">
+                    <i class="fa fa-th-list"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row bg-primary">
+              <div class="col">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" style="display:none" name="options" id="option1" autocomplete="off" checked> Price <i class="fa fa-sort"></i>
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" style="display:none" name="options" id="option2" autocomplete="off"> Popularity <i class="fa fa-sort"></i>
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" style="display:none" name="options" id="option3" autocomplete="off"> Rating <i class="fa fa-sort"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="view">
+                        <img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2018/03/samsung-galaxy-s9-7.jpg?itok=VbvDadJe" class="img-fluid" alt="placeholder">
+                        <div class="mask text-right row m-0 px-1 py-2 align-items-end">
+                          <div class="col red-text"><a href="product.html"><i class="fa fa-heart fa-2x" style="border:8px solid white;border-radius:20px;background:white;"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h3 class="h4">Samsung Galaxy S9 Plus 64GB</h3></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="product.html"><h5>€994,59</h5></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-left h6">
+                      <a class="text-warning" href="product.html#reviews">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="mx-0 btn btn-lg btn-info w-100 waves-effect waves-light">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto">
+            <ul class="pagination pg-blue mx-auto" style="width:270px;">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link active" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+              </li>
+              <span class="mt-1"> (154) </span>
+            </ul>
+          </div>
+  </section>
+
+
+  <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold"><img class="w-100" src="img/logo-light.png"></h6>
+          <p>For enthusiasts by enthusiasts. Compare top-notch products and buy at the lowest prices.</p>
+        </div>
+        <!--/.First column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Categories</h6>
+          <p><a href="#!">Computers</a></p>
+          <p><a href="#!">Tablets</a></p>
+          <p><a href="#!">Smartphones</a></p>
+          <p><a href="#!">Consoles</a></p>
+          <p><a href="#!">Cameras</a></p>
+        </div>
+        <!--/.Second column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+          <p><a href="#!">Your Account</a></p>
+          <p><a href="#!">Become an Affiliate</a></p>
+          <p><a href="#!">Shipping Rates</a></p>
+          <p><a href="#!">Help</a></p>
+        </div>
+        <!--/.Third column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="fa fa-home mr-3"></i> Heraklion, GR 71202, GR</p>
+          <p><i class="fa fa-envelope mr-3"></i> info@techhub.com</p>
+          <p><i class="fa fa-phone mr-3"></i> + 30 281 067 8328</p>
+          <p><i class="fa fa-print mr-3"></i> + 30 281 067 8329</p>
+        </div>
+        <!--/.Fourth column-->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <div class="row py-3 d-flex align-items-center justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4">
+
+          <!--Copyright-->
+          <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="#!"><strong> TechHub.com</strong></a></p>
+          <!--/.Copyright-->
+
+        </div>
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4 ml-lg-0">
+          <img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+        </div>
+
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4 ml-lg-0">
+
+          <!--Social buttons-->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a href="#!" class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <!--/.Social buttons-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script defer src="js/fontawesome-all.min.js"></script>
+</body>
+
+</html>
