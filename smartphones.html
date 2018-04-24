@@ -28,8 +28,8 @@
 			</div>
 			<div class="col">
 				 <form action="search-results.html" method="GET" class="form-inline ml-auto">
-					<div class="input-group input-group-lg">
-						<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+					<div class="input-group input-group-lg" style="width:600px">
+						<input class="form-control" type="text" placeholder="Search" aria-label="Search" style="width:500px;">
 						<button class="btn btn-orange btn-md my-0 ml-sm-2" type="submit"><i class="fa fa-search"></i></button>
 					</div>
 				</form>
@@ -43,11 +43,11 @@
 			<div class="col-auto text-right">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://www.newspepper.gr/wp-content/uploads/2017/06/avatar-sequels-delayed-696x464.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid img-thumbnail" style="height:70px; width: 70px; object-fit: cover;"></a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/avatar-sequels-delayed-696x464.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid img-thumbnail" style="height:70px; width: 70px; object-fit: cover;"></a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Logout</a>
                 </div>
             </li>
 			</ul>
@@ -89,28 +89,35 @@
     </nav>
 
     <header class="bg-secondary text-white text-center">
-      <div id="homepage-carousel" class="carousel slide" data-ride="carousel">
+      <div id="category-carousel" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
-			<li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-			<li data-target="#homepage-carousel" data-slide-to="1"></li>
-			<li data-target="#homepage-carousel" data-slide-to="2"></li>
+			<li data-target="#category-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#category-carousel" data-slide-to="1"></li>
+			<li data-target="#category-carousel" data-slide-to="2"></li>
 		  </ol>
-		  <div class="carousel-inner">
-			<div class="carousel-item active" style="background:#f5f5f5">
-			  <img src="https://www.rogers.com/cms/rogers/page-specific/wireless/samsung/galaxy-s9/images/hero-img-D-EN.png" alt="First slide">
+		  <div class="carousel-inner" style="height:400px;">
+			<div class="carousel-item active" style="height:400px;background:black;">
+				<div class="carousel-caption">
+					<button class="btn btn-info btn-lg">Buy now</button>
+				</div>
+			  <img src="img/Normal_Select_Arrow_2_Small.jpg" alt="First slide">
 			</div>
-			<div class="carousel-item" style="background:#f5f5f5">
-			  <img src="https://www.rogers.com/cms/rogers/page-specific/wireless/samsung/galaxy-s9/images/hero-img-D-EN.png" alt="Second slide">
-			</div>
-			<div class="carousel-item" style="background:#f5f5f5">
-			  <img src="https://www.rogers.com/cms/rogers/page-specific/wireless/samsung/galaxy-s9/images/hero-img-D-EN.png" alt="Third slide">
-			</div>
+			<div class="carousel-item" style="height:400px;background:#0078d8">
+<div class="carousel-caption">
+					<button class="btn btn-secondary btn-lg">Buy now</button>
+				</div>
+			  <img src="img/2016-06-08-image-4.png" alt="First slide">			</div>
+			<div class="carousel-item" style="background:#ececec">
+<div class="carousel-caption">
+					<button class="btn btn-warning btn-lg">Buy now</button>
+				</div>
+			  <img src="img/Apple_BrandPage_AppleWatchS3_1920x400-1.png" alt="First slide">			</div>
 		  </div>
-		  <a class="carousel-control-prev" href="#homepage-carousel" role="button" data-slide="prev">
+		  <a class="carousel-control-prev" href="#category-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		  </a>
-		  <a class="carousel-control-next" href="#homepage-carousel" role="button" data-slide="next">
+		  <a class="carousel-control-next" href="#category-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		  </a>
@@ -119,111 +126,82 @@
 
     <section>
       <div class="container">
-        <div class="row my-4 px-2">
-			<h2>Most viewed products</h2>
+        <div class="row my-4">
+			<h2>Smartphones</h2>
 		</div>
         <div class="row">
-			<div class="col-4 px-0">
+			<div class="col-3">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<a href="product.html"><img class="w-100" src="img/samsung-galaxy-s9-7.jpg"></a>
+							<a href="product.html"><img class="img-fluid" src="img/20171113120923_b907dbd1.jpeg"></a>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<h3><a class="text-primary" href="product.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+							<h3><a class="text-primary" href="product.html">Smartphones</a></h3>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<a href="product.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-8 text-left h5">
-							<a class="text-warning" href="product.html#reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</a>
-						</div>
-						<div class="col-4 text-right h5">
-							<a class="text-danger" href="#favorite">
-								<i class="fa fa-heart"></i>
-							</a>
+							<a href="product.html"><h4 class="h6">Affordable, Mid-Range, High-End</h4></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-4 px-0">
+			<div class="col-3">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<a href="product.html"><img class="w-100" src="img/samsung-galaxy-s9-7.jpg"></a>
+							<a href="product.html"><img class="img-fluid" src="img/20171113121103_6208c2a1.jpeg"></a>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<h3><a class="text-primary" href="product.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+							<h3><a class="text-primary" href="product.html">Cases</a></h3>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<a href="product.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-8 text-left h5">
-							<a class="text-warning" href="product.html#reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</a>
-						</div>
-						<div class="col-4 text-right h5">
-							<a class="text-danger" href="#favorite">
-								<i class="fa fa-heart"></i>
-							</a>
+							<a href="product.html"><h4 class="h6">Fold, Plain, Leather</h4></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-4 px-0">
+			<div class="col-3">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<a href="product.html"><img class="w-100" src="img/samsung-galaxy-s9-7.jpg"></a>
+							<a href="product.html"><img class="img-fluid" src="img/20171113121028_cbcb1d7a.jpeg"></a>
 						</div>
 					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<h3><a class="text-primary" href="product.html">Handsfree</a></h3>
+						</div>
+					</div>
+					<div class="row mx-2">
+						<div class="col">
+							<a href="product.html"><h4 class="h6">Bluetooth, Wired, Two Earpieces</h4></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="container">
 					<div class="row">
 						<div class="col">
-							<h3><a class="text-primary" href="product.html">Samsung Galaxy S9 4GB RAM 64GB</a></h3>
+							<a href="product.html"><img class="img-fluid" src="img/20171113121104_92c62e63.jpeg"></a>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mx-2">
 						<div class="col">
-							<a href="product.html"><h4>€994,59 <i class="fa fa-shopping-cart text-warning"></i></h4></a>
+							<h3><a class="text-primary" href="product.html">Components</a></h3>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-8 text-left h5">
-							<a class="text-warning" href="product.html#reviews">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</a>
-						</div>
-						<div class="col-4 text-right h5">
-							<a class="text-danger" href="#favorite">
-								<i class="fa fa-heart"></i>
-							</a>
+					<div class="row mx-2">
+						<div class="col">
+							<a href="product.html"><h4 class="h6">Screens, Batteries, Buttons</h4></a>
 						</div>
 					</div>
 				</div>
@@ -236,13 +214,13 @@
 
     <section>
       <div class="container">
-        <div class="row my-4 px-2">
-  			<h2>Enthusiast products</h2>
-  		</div>
+        <div class="row my-4">
+			<h2>On sale</h2>
+		</div>
         <div class="row no-gutters h-400 z-depth-5 mb-5">
 			<div class="col-6 view overlay">
 			<a href="product.html">
-				<img class="img-fluid img-cover full-height" src="https://d1urewwzb2qwii.cloudfront.net/sys-master/root/hc9/h06/8898920284190/New-Razer-Blade-Gamers-Laptop.jpg">
+				<img class="img-fluid img-cover full-height" src="img/New-Razer-Blade-Gamers-Laptop.jpg">
 				<div class="mask flex-center rgba-black-strong">
 					<p class="white-text lead">Razer Blade</p>
 				</div>
@@ -252,7 +230,7 @@
 			<div class="col-6">
 				<div class="row h-200 no-gutters view overlay">
 			<a href="product.html">
-				<img class="img-fluid img-cover" src="https://cnet4.cbsistatic.com/img/I-2dhG3a_A2B-LPW1vtnnnynxjk=/830x467/2017/10/16/53715bdb-d189-4aae-8e8b-f48cbe5d9512/google-pixel-2-0304-013.jpg">
+				<img class="img-fluid img-cover" src="img/google-pixel-2-0304-013.jpg">
 				<div class="mask flex-center rgba-black-strong">
 					<p class="white-text lead">Google Pixel 2</p>
 				</div>
@@ -260,7 +238,7 @@
 				</div>
 				<div class="row h-200 no-gutters view overlay">
 			<a href="product.html">
-				<img class="img-fluid img-cover" src="https://c.s-microsoft.com/en-us/CMSImages/SurfaceHome_Book2_1_ContentPlacement3_V1_US_P.png.jpg?version=44a56fb3-7ef3-dd03-626f-f83620e314a1">
+				<img class="img-fluid img-cover" src="img/SurfaceHome_Book2_1_ContentPlacement3_V1_US_P.png.jpg">
 				<div class="mask flex-center rgba-black-strong">
 					<p class="white-text lead">Microsoft Surface Home</p>
 				</div>
@@ -340,7 +318,7 @@
                   </div>
                   <!--Grid column-->
 				  <div class="col-md-4 col-lg-4 ml-lg-0">
-					<img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+					<img class="img-fluid" src="img/creditcardicons.png">
 				  </div>
 
                   <!--Grid column-->

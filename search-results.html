@@ -16,6 +16,8 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body>
@@ -23,10 +25,10 @@
     <div class="container" style="display:inherit;">
       <div class="row align-items-center justify-content-between">
         <div class="col">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="w-100" src="img/logo.png"></a>
+          <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="w-100" src="img/logo.png"></a>
         </div>
         <div class="col">
-          <form action="search-results" method="GET" class="form-inline ml-auto">
+          <form action="search-results.html" method="GET" class="form-inline ml-auto">
             <div class="input-group input-group-lg" style="width:600px">
               <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="width:500px;">
               <button class="btn btn-orange btn-md my-0 ml-sm-2" type="submit"><i class="fa fa-search"></i></button>
@@ -90,7 +92,7 @@
   <section>
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-3 bg-secondary">
+        <div class="col-3 grey lighten-3">
           <div class="filter-container m-2">
             <h2 class="h2">Manufacturer</h2>
             <ul class="list-unstyled m-0 p-0">
@@ -165,11 +167,6 @@
                 </div>
               </li>
             </ul>
-            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Nokia (15)</a>
-              <a class="dropdown-item" href="#">MLS (10)</a>
-            </div>
           </div>
           <div class="filter-container m-2">
             <h2 class="h2">Memory</h2>
@@ -207,8 +204,8 @@
             </ul>
             <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Nokia (15)</a>
-              <a class="dropdown-item" href="#">MLS (10)</a>
+              <a class="dropdown-item" href="#">8GB (3)</a>
+              <a class="dropdown-item" href="#">10GB (1)</a>
             </div>
           </div>
           <div class="filter-container m-2">
@@ -217,72 +214,77 @@
               <li>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck16">
-                  <label class="custom-control-label" for="customCheck16">Under 3.5" (6)</label>
+                  <label class="custom-control-label" for="customCheck16">Έως 3.5" (6)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck17">
-                  <label class="custom-control-label" for="customCheck17">3.5" to 4.5" (22)</label>
+                  <label class="custom-control-label" for="customCheck17">3.5" - 4.5" (22)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck18">
-                  <label class="custom-control-label" for="customCheck18">4.5" to 5.5" (18)</label>
+                  <label class="custom-control-label" for="customCheck18">4.5" - 5.5" (18)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck19">
-                  <label class="custom-control-label" for="customCheck19">Over 5.5" (16)</label>
+                  <label class="custom-control-label" for="customCheck19">Τουλάχιστον 5.5" (16)</label>
                 </div>
               </li>
             </ul>
-            <a class="nav-link dropdown-toggle p-0 m-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-info">More</span></a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Nokia (15)</a>
-              <a class="dropdown-item" href="#">MLS (10)</a>
-            </div>
           </div>
           <div class="filter-container m-2">
             <h2 class="h2">Price</h2>
             <ul class="list-unstyled m-0 p-0">
               <li>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck19">
-                  <label class="custom-control-label" for="customCheck19">Under 100€ (9)</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck20">
+                  <label class="custom-control-label" for="customCheck20">Έως 100€ (9)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck19">
-                  <label class="custom-control-label" for="customCheck19">100€-200€ (12)</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck21">
+                  <label class="custom-control-label" for="customCheck21">100€-200€ (12)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck19">
-                  <label class="custom-control-label" for="customCheck19">200€-300€ (32)</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck22">
+                  <label class="custom-control-label" for="customCheck22">200€-300€ (32)</label>
                 </div>
               </li>
               <li>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck19">
-                  <label class="custom-control-label" for="customCheck19">Over 400€ (12)</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck23">
+                  <label class="custom-control-label" for="customCheck23">Over 400€ (12)</label>
                 </div>
               </li>
             </ul>
-            <span class="text-warning">Add a slider here</span>
+            <span>
+              <p>
+                <label for="amount">Price range:</label>
+                <input type="text" id="amount" readonly style="border:0; background: none;font-weight:bold;">
+              </p>
+
+              <div id="slider-range"></div>
+            </span>
           </div>
         </div>
         <div class="col-9 p-4">
           <div class="container">
             <div class="row align-items-center justify-content-between">
-              <div class="col text-left">
+              <div class="col-auto text-left">
                 <h1>Search results</h1>
               </div>
-              <div class="col">
+              <div class="col-auto text-left">
+                <span class="mt-1"> (154) </span>
+              </div>
+              <div class="col ml-4 pl-4">
                 <ul class="pagination pg-blue m-0">
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
@@ -302,10 +304,9 @@
                         </a>
 
                   </li>
-                  <span class="mt-1"> (154) </span>
                 </ul>
               </div>
-              <div class="col text-right">
+              <!-- <div class="col text-right">
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="radio" style="display:none" name="options" id="option1" autocomplete="off" checked>
@@ -316,10 +317,10 @@
                     <i class="fa fa-th-list"></i>
                   </label>
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="row bg-primary">
-              <div class="col">
+            <div class="row bg-primary mx-0">
+              <div class="col px-0">
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="radio" style="display:none" name="options" id="option1" autocomplete="off" checked> Price <i class="fa fa-sort"></i>
@@ -329,6 +330,18 @@
                   </label>
                   <label class="btn btn-primary">
                     <input type="radio" style="display:none" name="options" id="option3" autocomplete="off"> Rating <i class="fa fa-sort"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="col text-right px-0">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" style="display:none" name="options" id="option1" autocomplete="off" checked>
+                    <i class="fa fa-th"></i>
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" style="display:none" name="options" id="option2" autocomplete="off">
+                    <i class="fa fa-th-list"></i>
                   </label>
                 </div>
               </div>
@@ -821,6 +834,24 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script defer src="js/fontawesome-all.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 2000,
+      values: [ 490, 1000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "€" + ui.values[ 0 ] + " - €" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "€" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - €" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
 </body>
 
 </html>
