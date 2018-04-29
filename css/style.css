@@ -38,3 +38,24 @@ a {
 .h-400{
 	height:400px;
 }
+
+.category-image{
+	margin-left: -40px !important;
+}
+
+.on-sale-title-align{
+	margin-left: 13px !important;
+}
+
+.navbar-allign{
+	margin-left: -11px !important;
+}
+
+.navbar-footer-logo-allign{
+	margin-left: -8px;
+}
+
+.image-size{
+	width: auto;
+	height: 150px;
+}
